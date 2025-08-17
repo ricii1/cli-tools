@@ -1,0 +1,11 @@
+#!/bin/bash
+# cli-tools-help: Show available commands in this folder
+
+echo "Available commands in /home/ricii/cli-tools/bin:"
+echo ""
+echo "extract-any     - Extract various archive formats with a single command"
+echo "install-deb     - Easily install .deb packages"
+echo "install-gz      - Easily install .tar.gz/.tgz/.tar.bz2/.tar.xz files"
+echo "mkcd            - Create a directory and immediately enter it"
+echo "cli-tools-help  - Show this help message"
+echo ""
