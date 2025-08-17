@@ -1,7 +1,7 @@
 #!/bin/bash
 # cli-tools-help: Show available commands in this folder
 
-echo "Available commands in /home/ricii/cli-tools/bin:"
+echo "Available commands in $HOME/cli-tools/bin:"
 echo ""
 echo "extract-any     - Extract various archive formats with a single command"
 echo "install-deb     - Easily install .deb packages"
