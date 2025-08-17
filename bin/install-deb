@@ -1,0 +1,10 @@
+#!/bin/bash
+# Install .deb packages easily
+# Usage: install-deb file.deb
+
+if [ -z "$1" ]; then
+  echo "Usage: install-deb <file.deb>"
+  exit 1
+fi
+
+sudo dpkg -i "$1" && sudo apt-get install

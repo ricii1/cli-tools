@@ -1,0 +1,13 @@
+#!/bin/bash
+# Extract and install from tar.gz source
+# Usage: install-gz file.tar.gz
+
+if [ -z "$1" ]; then
+  echo "Usage: install-gz <file.tar.gz>"
+  exit 1
+fi
+
+FILE="$1"
+DIR=$(basename "$FILE" .tar.gz)
+
+tar -xvzf "$FILE" || exit

@@ -1,0 +1,5 @@
+#!/bin/bash
+# Make directory and cd into it
+# Usage: mkcd dirname
+
+mkdir -p "$1" && cd "$1" || exit

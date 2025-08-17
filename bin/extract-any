@@ -1,0 +1,20 @@
+#!/bin/bash
+# Extract any compressed file without remembering flags
+# Usage: extract-any file
+
+if [ -z "$1" ]; then
+  echo "Usage: extract-any <file>"
+  exit 1
+fi
+
+case "$1" in
+  *.tar.bz2)   tar xvjf "$1" ;;
+  *.tar.gz)    tar xvzf "$1" ;;
+  *.tar.xz)    tar xvJf "$1" ;;
+  *.tar)       tar xvf "$1" ;;
+  *.tbz2)      tar xvjf "$1" ;;
+  *.tgz)       tar xvzf "$1" ;;
+  *.zip)       unzip "$1" ;;
+  *.rar)       unrar x "$1" ;;
+  *)           echo "Unsupported file format: $1" ;;
+esac
